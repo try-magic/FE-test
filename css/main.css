@@ -1,0 +1,467 @@
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+@font-face {
+  font-family: 'League Gothic';
+  src: url("../font/leaguegothic-regular-webfont.eot");
+  src: url("../font/leaguegothic-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../font/leaguegothic-regular-webfont.woff") format('woff'), url("../font/leaguegothic-regular-webfont.ttf") format('truetype'), url("../font/leaguegothic-regular-webfont.svg#league_gothicregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  position: relative;
+  width: 1100px;
+  margin: 0px auto;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+html {
+  height: 100%;
+  color: #333;
+}
+html body {
+  position: relative;
+  min-height: 100%;
+  height: auto;
+  background-color: #fff;
+  border-left: 2px solid #000;
+}
+html body ul {
+  list-style: none;
+}
+html body a {
+  text-decoration: none;
+}
+.top-line {
+  position: relative;
+  background-color: rgba(0,75,142,0.7);
+  height: 44px;
+  line-height: 44px;
+  margin-left: -2px;
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1;
+}
+.top-line .logo img {
+  vertical-align: middle;
+}
+.top-line .top-menu {
+  float: right;
+}
+.top-line .top-menu li {
+  float: left;
+  padding: 0px 10px;
+}
+.top-line .top-menu li a {
+  color: inherit;
+  text-transform: uppercase;
+}
+.top-line .account {
+  font-weight: 300;
+}
+.top-line .account li {
+  float: left;
+  padding: 0px 15px 0px 25px;
+}
+.top-line .account li.search:before {
+  content: '';
+  position: relative;
+  width: 17px;
+  height: 16px;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -20px;
+  background-image: url("../images/icon-search.png");
+  background-position: center;
+}
+.top-line .account li.search:after {
+  content: '';
+  position: relative;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  right: -15px;
+  border-right: 1px solid rgba(178,201,221,0.5);
+}
+.top-line .account li.search input {
+  display: none;
+}
+.top-line .account li span {
+  cursor: pointer;
+}
+.top-line .account li span:after {
+  content: '';
+  position: relative;
+  height: 0px;
+  width: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  top: 2px;
+  border: 5px solid transparent;
+  border-top-color: #fff;
+}
+.header {
+  position: relative;
+  margin-left: -2px;
+  background-color: #fff;
+  height: 96px;
+  z-index: 1;
+}
+.header .menu:before,
+.header .menu:after {
+  content: " ";
+  display: table;
+}
+.header .menu:after {
+  clear: both;
+}
+.header .menu li {
+  float: left;
+  padding: 0px 25px;
+  height: 96px;
+  border-left: 1px solid #bfd2e2;
+  border-right: 1px solid #bfd2e2;
+}
+.header .menu li + li {
+  border-left: 0px;
+}
+.header .menu li a {
+  display: block;
+  min-width: 89px;
+}
+.header .menu li a.img-logo {
+  min-width: 0px;
+  width: 50px;
+  line-height: 96px;
+}
+.header .menu li a.img-logo img {
+  vertical-align: middle;
+}
+.header .menu li a.start .select-content:before,
+.header .menu li a.end .select-content:before,
+.header .menu li a.persons .select-content:before {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 39px;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: url("../images/sprite.png") 0px 0px no-repeat;
+}
+.header .menu li a.end .select-content:before {
+  background-position: 0px -30px;
+}
+.header .menu li a.persons .select-content:before {
+  background-position: 0px -60px;
+}
+.header .menu li a.btn-primary {
+  background-color: #094798;
+  border: 1px solid #bfd2e2;
+  margin-top: 23px;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'League Gothic';
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+}
+.header .menu li a span {
+  display: block;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #004b8e;
+  text-align: center;
+}
+.header .menu li a span.select-title {
+  padding: 8px 0px 13px;
+  font-size: 13px;
+}
+.header .menu li a span.select-content {
+  line-height: 31px;
+  font-size: 36px;
+  font-family: 'League Gothic';
+}
+.header .menu li a span.select-content:after {
+  content: '';
+  display: block;
+  width: 0px;
+  margin: 15px auto 0px;
+  border: 5px solid transparent;
+  border-top-color: #004b8e;
+}
+.content .slider-wrapper {
+  position: relative;
+  margin-top: -140px;
+}
+.content .slider-wrapper .slider {
+  position: relative;
+  height: 660px;
+}
+.content .slider-wrapper .slider li {
+  display: none;
+  position: absolute;
+  width: 100%;
+  line-height: 660px;
+}
+.content .slider-wrapper .slider li.active {
+  display: block;
+}
+.content .slider-wrapper .slider li img {
+  position: absolute;
+  width: 100%;
+}
+.content .slider-wrapper .slider li .slide-info {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  top: 63px;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+  z-index: 1;
+}
+.content .slider-wrapper .slider li .slide-info h2 {
+  margin: 0px;
+  color: #fff;
+  font-size: 69px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+}
+.content .slider-wrapper .slider li .slide-info p {
+  width: 390px;
+  margin: 0px auto 15px;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+.content .slider-wrapper .slider li .slide-info .btn-warning {
+  display: block;
+  width: 275px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0px auto;
+  background-color: #febc11;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+}
+.content .slider-wrapper .bullets {
+  position: absolute;
+  width: 1100px;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -550px;
+  text-align: right;
+  letter-spacing: -3px;
+}
+.content .slider-wrapper .bullets li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.content .slider-wrapper .bullets li.active {
+  width: 16px;
+  height: 16px;
+  margin-bottom: -3px;
+  background-color: #ffb900;
+}
