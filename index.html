@@ -2,126 +2,158 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FE-test</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<script async="true" src="js/picturefill.js"></script>
 </head>
-<body>
+<body class="mobile">
 	<div class="top-line">
 		<div class="container">
-			<a href="/" class="pull-left logo"><img src="images/logo.png"/></a>
-			<ul class="account dropdown pull-right">
-				<li class="search">
-					<input type="text" name="search"/>
-				</li>
-				<li>
-					<span>Hi, Samantha</span>
-				</li>
-			</ul>
-			<ul class="top-menu pull-right">
-				<li>
-					<a href="/">Destinations</a>
-				</li>
-				<li>
-					<a href="/">Interests</a>
-				</li>
-				<li>
-					<a href="/">Deals</a>
-				</li>
-				<li>
-					<a href="/">Info</a>
-				</li>
-			</ul>			
+			<div class="col-2 pull-right">
+				<a class="btn-info" href="/"></a>
+				<ul class="account dropdown">
+					<li class="search">
+						<input type="text" name="search"/>
+					</li>
+					<li>
+						<span>Hi, Samantha</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-8 pull-left">
+				<a href="/" class="logo"></a>	
+			</div>
+			<div class="col-2 pull-right">
+				<a class="btn-menu" href="/"></a>
+				<ul class="top-menu dropdown">
+					<li>
+						<a href="/">Destinations</a>
+					</li>
+					<li>
+						<a href="/">Interests</a>
+					</li>
+					<li>
+						<a href="/">Deals</a>
+					</li>
+					<li>
+						<a href="/">Info</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="header">
 		<div class="container">
 			<ul class="menu">
-				<li>
+				<li class="col-0">
 					<a class="img-logo" href="/">
 						<img src="images/img-logo.png"/>
 					</a>
 				</li>
-				<li>
+				<li class="col-6">
 					<a href="/" class="start">
 						<span class="select-title">From</span>
 						<span class="select-content">Reykjavik</span>
 					</a>
 				</li>
-				<li>
+				<li class="col-6">
 					<a href="/" class="end">
 						<span class="select-title">To</span>
 						<span class="select-content">Costa del Sol</span>
 					</a>
 				</li>
-				<li>
+				<li class="col-3">
 					<a href="/">
 						<span class="select-title">Date</span>
 						<span class="select-content">21 Jun</span>
 					</a>
 				</li>
-				<li>
+				<li class="col-3">
 					<a href="/">
 						<span class="select-title">Duration</span>
 						<span class="select-content">1 Week</span>
 					</a>
 				</li>
-				<li>
+				<li class="col-3">
 					<a href="/" class="persons">
 						<span class="select-title">Travelers</span>
 						<span class="select-content"></span>
 					</a>
 				</li>
-				<li>
+				<li class="col-3">
 					<a class="btn-primary" href="/">Leita</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="content">
-		<div class="slider-wrapper">
-			<ul class="slider">
-				<li class="active">
-					<img src="images/pic1.jpg"/>
-					<div class="slide-info">
-						<h2>The Danish West Indies</h2>
-						<p>Neque porro quisquam est qui dolorem ipsumquia dolor sit amet, consectetur, adipisci velit</p>
-						<a href="/" class="btn-warning"><span>Trips Starting at 299€</span></a>
-					</div>
-				</li>
-				<li>
-					<img src="images/pic2.jpg"/>
-					<div class="slide-info">
-						<h2>The Danish West Indies</h2>
-						<p>Neque porro quisquam est qui dolorem ipsumquia dolor sit amet, consectetur, adipisci velit</p>
-						<a href="/" class="btn-warning"><span>Trips Starting at 299€</span></a>
-					</div>
-				</li>
-				<li>
-					<img src="images/pic3.jpg"/>
-					<div class="slide-info">
-						<h2>The Danish West Indies</h2>
-						<p>Neque porro quisquam est qui dolorem ipsumquia dolor sit amet, consectetur, adipisci velit</p>
-						<a href="/" class="btn-warning"><span>Trips Starting at 299€</span></a>
-					</div>
-				</li>
-				<li>
-					<img src="images/pic4.jpg"/>
-					<div class="slide-info">
-						<h2>The Danish West Indies</h2>
-						<p>Neque porro quisquam est qui dolorem ipsumquia dolor sit amet, consectetur, adipisci velit</p>
-						<a href="/" class="btn-warning"><span>Trips Starting at 299€</span></a>
-					</div>
-				</li>
-			</ul>
-			<ul class="bullets">
-				<li class="active"></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
+	<div class="slider-wrapper">
+		<ul class="slider">
+			<li class="active">
+				<picture>
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/pic1.jpg" media="(min-width: 1280px)">
+					<source srcset="images/m-slide.png">
+					<!--[if IE 9]></video><![endif]-->
+					<img srcset="pic1.jpg"/>
+				</picture>
+				<div class="slide-info">
+					<h2>The Danish West Indies</h2>
+					<p>Neque porro quisquam est qui dolorem ipsumquia dolor sit amet, consectetur, adipisci velit</p>
+					<a href="/" class="btn-warning"><span>Trips Starting at 299€</span></a>
+				</div>
+			</li>
+			<li>
+				<picture>
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/pic2.jpg" media="(min-width: 1280px)">
+					<source srcset="images/m-slide.png">
+					<!--[if IE 9]></video><![endif]-->
+					<img srcset="pic2.jpg"/>
+				</picture>
+				<div class="slide-info">
+					<h2>The Danish West Indies</h2>
+					<p>Neque porro quisquam est qui dolorem ipsumquia dolor sit amet, consectetur, adipisci velit</p>
+					<a href="/" class="btn-warning"><span>Trips Starting at 299€</span></a>
+				</div>
+			</li>
+			<li>
+				<picture>
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/pic3.jpg" media="(min-width: 1280px)">
+					<source srcset="images/m-slide.png">
+					<!--[if IE 9]></video><![endif]-->
+					<img srcset="pic3.jpg"/>
+				</picture>
+				<div class="slide-info">
+					<h2>The Danish West Indies</h2>
+					<p>Neque porro quisquam est qui dolorem ipsumquia dolor sit amet, consectetur, adipisci velit</p>
+					<a href="/" class="btn-warning"><span>Trips Starting at 299€</span></a>
+				</div>
+			</li>
+			<li>
+				<picture>
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/pic4.jpg" media="(min-width: 1280px)">
+					<source srcset="images/m-slide.png">
+					<!--[if IE 9]></video><![endif]-->
+					<img srcset="pic4.jpg"/>
+				</picture>
+				<div class="slide-info">
+					<h2>The Danish West Indies</h2>
+					<p>Neque porro quisquam est qui dolorem ipsumquia dolor sit amet, consectetur, adipisci velit</p>
+					<a href="/" class="btn-warning"><span>Trips Starting at 299€</span></a>
+				</div>
+			</li>
+		</ul>
+		<ul class="bullets">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 	</div>
 </body>
 </html>
