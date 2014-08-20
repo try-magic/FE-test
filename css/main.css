@@ -227,8 +227,8 @@ html body a {
 .top-line {
   position: relative;
   background-color: rgba(0,75,142,0.7);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70004B8E', 
-            endColorstr='#70004B8E',GradientType=0);
+/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70004B8E', 
+            endColorstr='#70004B8E',GradientType=0);*/
   height: 44px;
   min-width: 1100px;
   line-height: 44px;
@@ -482,7 +482,7 @@ html body a {
   margin-bottom: -3px;
   background-color: #ffb900;
 }
-@media only screen and (min-device-width: 200px) and (max-device-width: 1279px) {
+@media only screen and (min-width: 200px) and (max-width: 1279px) {
   body {
     border: 0px;
   }
@@ -688,6 +688,7 @@ html body a {
   }
   .slider-wrapper .slider li .slide-info {
     position: absolute;
+    width: 80%;
     bottom: 15px;
     top: auto;
     text-align: left;
@@ -697,13 +698,17 @@ html body a {
     font-size: 35px;
   }
   .slider-wrapper .slider li .slide-info p {
-    padding-left: 13px;
+    display: none;
+  }
+  .slider-wrapper .slider li .slide-info .btn-warning {
+    background-color: transparent;
+    padding-left: 20px;
+    width: auto;
     margin: 0px;
-    width: 80%;
     color: #ffb900;
     font-weight: bold;
   }
-  .slider-wrapper .slider li .slide-info .btn-warning {
+  .slider-wrapper .slider li .slide-info .btn-warning:after {
     display: none;
   }
   .slider-wrapper .bullets {
@@ -725,7 +730,7 @@ html body a {
     top: -2.5px;
   }
 }
-@media only screen and (max-device-width: 319px) {
+@media only screen and (max-width: 319px) {
   [class^=col-] {
     padding: 0px 5px !important;
   }
@@ -745,17 +750,17 @@ html body a {
     font-size: 14px;
   }
   .slider-wrapper .slider li .slide-info h2,
-  .slider-wrapper .slider li .slide-info p {
+  .slider-wrapper .slider li .slide-info .btn-warning {
     padding-left: 5px;
   }
   .slider-wrapper .slider li .slide-info h2 {
     font-size: 11px;
   }
-  .slider-wrapper .slider li .slide-info p {
+  .slider-wrapper .slider li .slide-info .btn-warning {
     font-size: 9px;
   }
 }
-@media only screen and (min-device-width: 540px) and (max-device-width: 1279px) {
+@media only screen and (min-width: 540px) and (max-width: 1279px) {
   .header .menu li a.btn-primary {
     font-size: 38px;
   }
@@ -766,10 +771,10 @@ html body a {
     font-size: 24px;
   }
   .slider-wrapper .slider li .slide-info h2,
-  .slider-wrapper .slider li .slide-info p {
+  .slider-wrapper .slider li .slide-info .btn-warning {
     padding-left: 20px;
   }
-  .slider-wrapper .slider li .slide-info p {
+  .slider-wrapper .slider li .slide-info .btn-warning {
     font-size: 20px;
   }
   .slider-wrapper .bullets li {
