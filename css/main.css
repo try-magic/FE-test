@@ -227,8 +227,8 @@ html body a {
 .top-line {
   position: relative;
   background-color: rgba(0,75,142,0.7);
-/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70004B8E', 
-            endColorstr='#70004B8E',GradientType=0);*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70004B8E', 
+            endColorstr='#70004B8E',GradientType=0);
   height: 44px;
   min-width: 1100px;
   line-height: 44px;
