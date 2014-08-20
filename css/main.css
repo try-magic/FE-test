@@ -230,6 +230,7 @@ html body a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70004B8E', 
             endColorstr='#70004B8E',GradientType=0);
   height: 44px;
+  min-width: 1100px;
   line-height: 44px;
   margin-left: -2px;
   color: #fff;
@@ -309,6 +310,7 @@ html body a {
   margin-left: -2px;
   background-color: #fff;
   height: 96px;
+  min-width: 1100px;
   z-index: 1;
 }
 .header .menu:before,
@@ -399,29 +401,24 @@ html body a {
 }
 .slider-wrapper .slider {
   position: relative;
-  height: 660px;
 }
 .slider-wrapper .slider li {
   display: none;
-  position: absolute;
   width: 100%;
-  line-height: 660px;
 }
 .slider-wrapper .slider li.active {
   display: block;
 }
 .slider-wrapper .slider li picture,
 .slider-wrapper .slider li img {
-  position: absolute;
+  display: block;
+  min-width: 1100px;
   width: 100%;
 }
 .slider-wrapper .slider li .slide-info {
-  display: inline-block;
-  position: relative;
+  position: absolute;
   width: 100%;
-  top: 63px;
-  vertical-align: middle;
-  line-height: normal;
+  bottom: 30%;
   text-align: center;
   z-index: 1;
 }
@@ -550,6 +547,7 @@ html body a {
     background: #fff;
     margin-left: 0px;
     height: auto;
+    min-width: 0px;
     line-height: normal;
     text-align: center;
   }
@@ -595,6 +593,7 @@ html body a {
   .header {
     height: auto;
     margin-left: 0px;
+    min-width: 0px;
   }
   .header .menu:before,
   .header .menu:after {
@@ -635,6 +634,7 @@ html body a {
     width: 0px;
     margin-top: 0px;
     margin-left: 5px;
+    border-top-color: transparent;
     border-left-color: #004b8e;
   }
   .header .menu li a.end .select-content:before {
@@ -683,6 +683,7 @@ html body a {
   .slider-wrapper .slider li picture,
   .slider-wrapper .slider li img {
     position: relative;
+    min-width: 0px;
     vertical-align: top;
   }
   .slider-wrapper .slider li .slide-info {

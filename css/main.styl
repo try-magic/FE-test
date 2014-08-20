@@ -58,6 +58,7 @@ html {
 	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70004B8E', 
             endColorstr='#70004B8E',GradientType=0);*/
 	height:44px;
+	min-width:1100px;
 	line-height:44px;
 	margin-left: -2px;
 	color:#fff;
@@ -139,6 +140,7 @@ html {
 	margin-left: -2px;
 	background-color: #fff;
 	height:96px;
+	min-width:1100px;
 	z-index:1;
 	.menu {
 		clearfix();
@@ -227,27 +229,22 @@ html {
 	margin-top:-140px;
 	.slider {
 		position:relative;
-		height: 660px;
 		li {
 			display:none;
-			position:absolute;
-			width:100%;
-			line-height: 660px;
+			width:100%;;
 			&.active {
 				display:block;
 			}
 			picture,
 			img {
-				position: absolute;
+				display: block;
+				min-width: 1100px;
 				width:100%;
 			}
 			.slide-info {
-				display: inline-block;
-				position: relative;
+				position: absolute;
 				width: 100%;
-				top:63px;
-				vertical-align: middle;
-				line-height: normal;
+				bottom:30%;
 				text-align: center;
 				z-index: 1;
 				h2 {
@@ -379,6 +376,7 @@ html {
 		background:#fff;
 		margin-left:0px;
 		height:auto;
+		min-width:0px;
 		line-height:normal;
 		clearfix();
 		text-align: center;
@@ -417,6 +415,7 @@ html {
 	.header {
 		height:auto;
 		margin-left:0px;
+		min-width:0px;
 		.menu {
 			clearfix();
 			li {
@@ -449,6 +448,7 @@ html {
 								width: 0px;
 								margin-top:0px;
 								margin-left:5px;
+								border-top-color:transparent;
 								border-left-color:#004b8e;
 							}
 						}
@@ -500,6 +500,7 @@ html {
 				picture,
 				img {
 					position:relative;
+					min-width:0px;
 					vertical-align: top;
 				}
 				.slide-info {
