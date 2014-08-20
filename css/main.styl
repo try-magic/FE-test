@@ -55,6 +55,8 @@ html {
 .top-line {
 	position:relative;
 	background-color:rgba(0,75,142,.7);
+	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70004B8E', 
+            endColorstr='#70004B8E',GradientType=0);*/
 	height:44px;
 	line-height:44px;
 	margin-left: -2px;
@@ -234,6 +236,7 @@ html {
 			&.active {
 				display:block;
 			}
+			picture,
 			img {
 				position: absolute;
 				width:100%;
@@ -373,12 +376,10 @@ html {
 		display:none;
 	}
 	.top-line {
-		position:relative;
 		background:#fff;
 		margin-left:0px;
 		height:auto;
 		line-height:normal;
-		z-index:1;
 		clearfix();
 		text-align: center;
 		.btn-info {
@@ -418,8 +419,6 @@ html {
 		margin-left:0px;
 		.menu {
 			clearfix();
-			position:relative;
-			z-index:1;
 			li {
 				height:50px;
 				line-height:48px;
@@ -432,12 +431,8 @@ html {
 						.select-content {
 							line-height:48px;
 							&:before {
-								content:'';
-								display:inline-block;
 								height:20px;
 								width:29px;
-								vertical-align:middle;
-								margin-right:5px;
 								background:url(../images/m-sprite.png) 0px -44px no-repeat;
 							}
 						}
@@ -449,13 +444,11 @@ html {
 						}
 						.select-content {
 							&:after {
-								content:'';
 								display:inline-block;
 								vertical-align:middle;
 								width: 0px;
 								margin-top:0px;
 								margin-left:5px;
-								border:5px solid transparent;
 								border-left-color:#004b8e;
 							}
 						}
@@ -488,7 +481,6 @@ html {
 						&.select-content {
 							line-height:31px;
 							font-size:20px;
-							font-family: 'League Gothic';
 							&:after {
 								display:none;
 							}
@@ -499,46 +491,31 @@ html {
 		}
 	}
 	.slider-wrapper {
-		position:relative;
 		margin:0px;
 		.slider {
 			height:auto;
 			li {
-				display:none;
 				position:relative;
-				width:100%;
 				line-height:normal;
-				&.active {
-					display:block;
-				}
 				picture,
 				img {
 					position:relative;
-					width:100%;
 					vertical-align: top;
 				}
 				.slide-info {
 					position: absolute;
-					width: 100%;
 					bottom:15px;
 					top:auto;
 					text-align:left;
-					z-index: 1;
 					h2 {
-						margin:0px;
 						padding-left:15px;
-						color:#fff;
 						font-size:35px;
-						font-family: 'Open Sans Condensed', sans-serif;
-						text-transform:uppercase;
 					}
 					p {
 						padding-left:13px;
 						margin:0px;
 						width:80%;
 						color:#ffb900;
-						font-size:16px;
-						font-family: 'Open Sans', sans-serif;
 						font-weight:bold;
 					}
 					.btn-warning {
@@ -548,7 +525,6 @@ html {
 			}
 		}
 		.bullets {
-			position:absolute;
 			right: 14px;
 			bottom: 11px;
 			margin:0px;
@@ -559,15 +535,10 @@ html {
 				float:left;
 				width:7px;
 				height:7px;
-				margin:0px 5px;
-				border-radius:50%;
-				background-color:#fff;
-				cursor:pointer;
 				&.active {
 					width:13px;
 					height:13px;
 					top: -2.5px;
-					background-color:#ffb900;
 				}
 			}
 		}	

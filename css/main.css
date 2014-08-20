@@ -227,6 +227,8 @@ html body a {
 .top-line {
   position: relative;
   background-color: rgba(0,75,142,0.7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70004B8E', 
+            endColorstr='#70004B8E',GradientType=0);
   height: 44px;
   line-height: 44px;
   margin-left: -2px;
@@ -408,6 +410,7 @@ html body a {
 .slider-wrapper .slider li.active {
   display: block;
 }
+.slider-wrapper .slider li picture,
 .slider-wrapper .slider li img {
   position: absolute;
   width: 100%;
@@ -544,12 +547,10 @@ html body a {
     display: none;
   }
   .top-line {
-    position: relative;
     background: #fff;
     margin-left: 0px;
     height: auto;
     line-height: normal;
-    z-index: 1;
     text-align: center;
   }
   .top-line:before,
@@ -595,10 +596,6 @@ html body a {
     height: auto;
     margin-left: 0px;
   }
-  .header .menu {
-    position: relative;
-    z-index: 1;
-  }
   .header .menu:before,
   .header .menu:after {
     content: " ";
@@ -623,12 +620,8 @@ html body a {
   .header .menu li a.start .select-content:before,
   .header .menu li a.end .select-content:before,
   .header .menu li a.persons .select-content:before {
-    content: '';
-    display: inline-block;
     height: 20px;
     width: 29px;
-    vertical-align: middle;
-    margin-right: 5px;
     background: url("../images/m-sprite.png") 0px -44px no-repeat;
   }
   .header .menu li a.start .select-title,
@@ -637,13 +630,11 @@ html body a {
   }
   .header .menu li a.start .select-content:after,
   .header .menu li a.end .select-content:after {
-    content: '';
     display: inline-block;
     vertical-align: middle;
     width: 0px;
     margin-top: 0px;
     margin-left: 5px;
-    border: 5px solid transparent;
     border-left-color: #004b8e;
   }
   .header .menu li a.end .select-content:before {
@@ -675,63 +666,46 @@ html body a {
   .header .menu li a span.select-content {
     line-height: 31px;
     font-size: 20px;
-    font-family: 'League Gothic';
   }
   .header .menu li a span.select-content:after {
     display: none;
   }
   .slider-wrapper {
-    position: relative;
     margin: 0px;
   }
   .slider-wrapper .slider {
     height: auto;
   }
   .slider-wrapper .slider li {
-    display: none;
     position: relative;
-    width: 100%;
     line-height: normal;
-  }
-  .slider-wrapper .slider li.active {
-    display: block;
   }
   .slider-wrapper .slider li picture,
   .slider-wrapper .slider li img {
     position: relative;
-    width: 100%;
     vertical-align: top;
   }
   .slider-wrapper .slider li .slide-info {
     position: absolute;
-    width: 100%;
     bottom: 15px;
     top: auto;
     text-align: left;
-    z-index: 1;
   }
   .slider-wrapper .slider li .slide-info h2 {
-    margin: 0px;
     padding-left: 15px;
-    color: #fff;
     font-size: 35px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    text-transform: uppercase;
   }
   .slider-wrapper .slider li .slide-info p {
     padding-left: 13px;
     margin: 0px;
     width: 80%;
     color: #ffb900;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
   }
   .slider-wrapper .slider li .slide-info .btn-warning {
     display: none;
   }
   .slider-wrapper .bullets {
-    position: absolute;
     right: 14px;
     bottom: 11px;
     margin: 0px;
@@ -743,16 +717,11 @@ html body a {
     float: left;
     width: 7px;
     height: 7px;
-    margin: 0px 5px;
-    border-radius: 50%;
-    background-color: #fff;
-    cursor: pointer;
   }
   .slider-wrapper .bullets li.active {
     width: 13px;
     height: 13px;
     top: -2.5px;
-    background-color: #ffb900;
   }
 }
 @media only screen and (max-device-width: 319px) {
